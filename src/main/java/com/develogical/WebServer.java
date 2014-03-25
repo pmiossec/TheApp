@@ -31,7 +31,7 @@ public class WebServer {
                 else if(query.equals("Who is good also?"))
                     new ResultsPage("The master of CD!!!").writeTo(resp);
                 else
-                    new ResultsPage(query).writeTo(resp);
+                    new ResultsPage("Viva el Continuous deployement!!").writeTo(resp);
             }
         }
     }
