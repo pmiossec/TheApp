@@ -25,7 +25,7 @@ public class WebServer {
                 if(query.equals("Who is Radwane?"))
                     new ResultsPage("A cool guy!").writeTo(resp);
                 else if(query.equals("Who is Philippe?"))
-                    new ResultsPage("A cool guy, too!").writeTo(resp);
+                    new ResultsPage("A cool guy, too!!").writeTo(resp);
                 else
 
                     new ResultsPage(query).writeTo(resp);
