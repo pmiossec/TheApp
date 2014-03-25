@@ -21,7 +21,11 @@ public class WebServer {
             if (req.getParameter("q") == null) {
                 new IndexPage().writeTo(resp);
             } else {
-                new ResultsPage(req.getParameter("q")).writeTo(resp);
+                String query = req.getParameter("q");
+                if(query.equals("Who is Radwane?"))
+                    new ResultsPage("A cool guy!").writeTo(resp);
+                else
+                    new ResultsPage(query).writeTo(resp);
             }
         }
     }
