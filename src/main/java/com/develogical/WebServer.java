@@ -26,8 +26,9 @@ public class WebServer {
                     new ResultsPage("A cool guy!").writeTo(resp);
                 else if(query.equals("Who is Philippe?"))
                     new ResultsPage("A cool guy, too!!").writeTo(resp);
+                else if(query.equals("Who are the kings of Continuous Deployement?"))
+                    new ResultsPage("R. and P.!!").writeTo(resp);
                 else
-
                     new ResultsPage(query).writeTo(resp);
             }
         }
